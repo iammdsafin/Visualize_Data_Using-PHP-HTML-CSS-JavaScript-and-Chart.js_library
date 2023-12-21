@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Planet Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="./public/Imposter.ico">
+</head>
+
+<body class="body-section">
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="planet-btn">
+                <div class="dashboard-heading">Hello Dear! 👨‍🚀</div>
+                <div class="dashboard-heading">Planet Dashboard 🌌</div>
+                <div class="planet-option" onclick="showPlanetInformation('gravity')">Gravity 🌠</div>
+                <div class="planet-option" onclick="showPlanetInformation('temperature')">Temperature 🌡️</div>
+                <div class="planet-option" onclick="showPlanetInformation('orbit_days')">Orbit 💫</div>
+                <div class="planet-option" onclick="showPlanetInformation('human_population')">Population 👨‍👩‍👧‍👦
+                </div>
+            </div>
+        </div>
+        <div id="planet-information"></div>
+    </div>
+</body>
+
+</html>
