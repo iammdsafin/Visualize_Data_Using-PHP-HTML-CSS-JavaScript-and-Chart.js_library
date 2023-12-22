@@ -1,5 +1,9 @@
 function showPlanetInformation(selectedProperty) {
-    fetch("fetchplanetdata.php")
+    //For fetching data from the planet_dn database
+    //fetch("fetchplanetdata.php")
+
+    //For fetching data from the fetchplanetdata.json file
+    fetch("fetchplanetdata.json")
         .then((response) => response.json())
         .then((planetData) => {
             const processedData = forSelectedPropertyTemperature(planetData, selectedProperty);

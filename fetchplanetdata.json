@@ -1,0 +1,47 @@
+{
+    "Earth": {
+        "id": "1",
+        "planet_name": "Earth",
+        "gravity": "9.81",
+        "temperature": "15�C",
+        "orbit_days": "365.2",
+        "human_population": "2147483647",
+        "created_at": "2023-12-22 23:53:13"
+    },
+    "Mars": {
+        "id": "1",
+        "planet_name": "Mars",
+        "gravity": "3.72076",
+        "temperature": "-65�C",
+        "orbit_days": "687",
+        "human_population": "0",
+        "created_at": "2023-12-22 23:53:13"
+    },
+    "Jupiter": {
+        "id": "1",
+        "planet_name": "Jupiter",
+        "gravity": "24.79",
+        "temperature": "-110�C",
+        "orbit_days": "4331",
+        "human_population": "0",
+        "created_at": "2023-12-22 23:53:13"
+    },
+    "Saturn": {
+        "id": "1",
+        "planet_name": "Saturn",
+        "gravity": "10.44",
+        "temperature": "-140�C",
+        "orbit_days": "10747",
+        "human_population": "0",
+        "created_at": "2023-12-22 23:53:13"
+    },
+    "Neptune": {
+        "id": "1",
+        "planet_name": "Neptune",
+        "gravity": "11.15",
+        "temperature": "-200�C",
+        "orbit_days": "59800",
+        "human_population": "0",
+        "created_at": "2023-12-22 23:53:13"
+    }
+}
