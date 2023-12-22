@@ -279,3 +279,85 @@ function showOrbitChart(canvasId, data) {
     });
 }
 //-------------------------------Pie Chart for Orbit (Days )End--------------------------------//
+
+
+
+//----------------------------------Doughnut Chart for Population Start-----------------------//
+function showPopulationChart(canvasId, data) {
+    const showChart = document.getElementById(canvasId).getContext("2d");
+    new Chart(showChart, {
+        type: 'line',
+        data: {
+            labels: Object.keys(data),
+            datasets: [{
+                data: Object.values(data),
+                backgroundColor: '#9966FF33',
+                borderColor: '#9966FF',
+                borderWidth: 3
+            }]
+        },
+        
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Human Population of Different Planets',
+                    font: {
+                        size: 30,
+                        family: 'monospace'
+                    },
+                    color: 'White',
+                    padding: {
+                        top: 100,
+                        bottom: 50
+                    }
+                },
+                legend: {
+                    display: false
+                }
+            },
+
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: "Population",
+                        font: {
+                            size: 20,
+                            family: "monospace",
+                        },
+                        color: 'White'
+                    },
+                    ticks: {
+                        font: {
+                            size: 20,
+                            family: 'monospace'
+                        },
+                        color: 'White'
+                    }
+                },
+
+                x: {
+                    title: {
+                        display: true,
+                        text: "Planet's Name",
+                        font: {
+                            size: 20,
+                            family: "monospace",
+                        },
+                        color: 'White'
+                    },
+                    ticks: {
+                        font: {
+                            size: 20,
+                            family: 'monospace'
+                        },
+                        color: 'White'
+                    }
+                },
+            },
+        }
+    });
+}
+//----------------------------------Doughnut Chart for Population End-------------------------//
