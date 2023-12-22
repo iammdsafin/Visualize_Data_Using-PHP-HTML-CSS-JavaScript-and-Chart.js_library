@@ -217,3 +217,65 @@ function showTemperatureChart(canvasId, data) {
     });
 }
 //------------------------------Line Chart for Temperature End--------------------------------//
+
+
+
+//-------------------------------Pie Chart for Orbit (Days )Start------------------------------//
+function showOrbitChart(canvasId, data) {
+    const showChart = document.getElementById(canvasId).getContext("2d");
+    new Chart(showChart, {
+        type: 'pie',
+        data: {
+            labels: Object.keys(data),
+            datasets: [{
+                data: Object.values(data),
+                backgroundColor: [
+                    '#ff6384',
+                    '#36a2eb',
+                    '#ffcd56',
+                    '#4bc0c0',
+                    '#9966ff'
+                ],
+                borderColor: [
+                    '#ff6384',
+                    '#36a2eb',
+                    '#ffcd56',
+                    '#4bc0c0',
+                    '#9966ff'
+                ],
+                borderWidth: 5
+            }]
+        },
+
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Orbit Days of Different Planets',
+                    font: {
+                        size: 30,
+                        family: 'monospace'
+                    },
+                    color: 'White',
+                    padding: {
+                        top: 100,
+                        bottom: 50
+                    }
+                },
+                legend: {
+                    display: true,
+                    position: 'bottom',
+                    labels: {
+                        font: {
+                            size: 20,
+                            family: 'monospace'
+                        },
+                        color: 'White',
+                        padding: 35
+                    }
+                }
+            },
+        }
+    });
+}
+//-------------------------------Pie Chart for Orbit (Days )End--------------------------------//
