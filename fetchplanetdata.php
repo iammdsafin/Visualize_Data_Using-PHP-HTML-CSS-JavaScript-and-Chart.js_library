@@ -4,7 +4,7 @@ include 'config.php';
 function fetchDataFromTable($tableName)
 {
     global $conn;
-    $sql = "SELECT * FROM $tableName ORDER BY id DESC LIMIT 1";
+    $sql = "SELECT * FROM $tableName ORDER BY created_at DESC LIMIT 1";
     $result = $conn->query($sql);
     return $result->fetch_assoc();
 }
